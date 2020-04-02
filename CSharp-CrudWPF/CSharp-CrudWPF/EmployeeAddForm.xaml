@@ -1,0 +1,51 @@
+﻿<Window x:Class="CSharp_CrudWPF.EmployeeAddForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharp_CrudWPF"
+        mc:Ignorable="d"
+        Title="EmployeeAddForm" Height="570" Width="450" WindowStyle="None" FontSize="14" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+
+        <Rectangle Grid.ColumnSpan="2" Margin="0,0,0,520" Fill="#FF2C2E2F" />
+        <Grid Margin="15 70 30 150">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Text="Employee ID" Margin="0,4,0,0" />
+            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="0" Margin="0,4,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" Text="Last Name" Margin="0,4,0,0" />
+            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="1" Margin="0,4,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" Text="First Name" Margin="0,4,0,0" />
+            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="2" Margin="0,4,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Text="Middle Name" Margin="0,4,0,0" />
+            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="3" Margin="0,4,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="4" Text="Birthdate" Margin="0,4,0,0" />
+            <DatePicker VerticalAlignment="Top"  Grid.Column="1" Grid.Row="4" Margin="0,1,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="5" Text="Gender" Margin="0,4,0,0" />
+            <ComboBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="5" Margin="0,4,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="6" Text="Address" Margin="0,4,0,0" />
+            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Height="53" Margin="0,4,0,0" />
+            <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="8" Text="Contact No." Margin="0,4,0,0" />
+            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="8" Margin="0,4,0,0" />
+            <Button Margin="100,10,108,-12" Content="Update"  Grid.Column="1" Grid.Row="9"  />
+            <Button Margin="0,10,212,-12" Content="Save"  Grid.Column="1" Grid.Row="9"  />
+            <Button Margin="203,10,9,-12" Content="Cancel" Grid.Column="1" Grid.Row="9" />
+        </Grid>
+    </Grid>
+</Window>
