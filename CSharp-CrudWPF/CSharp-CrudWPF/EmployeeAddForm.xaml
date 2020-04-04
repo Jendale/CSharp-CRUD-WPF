@@ -28,24 +28,25 @@
             </Grid.RowDefinitions>
 
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Text="Employee ID" Margin="0,4,0,0" />
-            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="0" Margin="0,4,0,0" />
+            <TextBox x:Name="tbxEmployeeID" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="0" Margin="0,4,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" Text="Last Name" Margin="0,4,0,0" />
-            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="1" Margin="0,4,0,0" />
+            <TextBox x:Name="tbxLastName" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="1" Margin="0,4,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" Text="First Name" Margin="0,4,0,0" />
-            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="2" Margin="0,4,0,0" />
+            <TextBox x:Name="tbxFirstName" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="2" Margin="0,4,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Text="Middle Name" Margin="0,4,0,0" />
-            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="3" Margin="0,4,0,0" />
+            <TextBox x:Name="tbxMiddleName" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="3" Margin="0,4,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="4" Text="Birthdate" Margin="0,4,0,0" />
-            <DatePicker VerticalAlignment="Top"  Grid.Column="1" Grid.Row="4" Margin="0,1,0,0" />
+            <DatePicker x:Name="dtBirthdate" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="4" Margin="0,1,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="5" Text="Gender" Margin="0,4,0,0" />
-            <ComboBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="5" Margin="0,4,0,0" />
+            <ComboBox x:Name="cbxGender" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="5" Margin="0,4,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="6" Text="Address" Margin="0,4,0,0" />
-            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Height="53" Margin="0,4,0,0" />
+            <TextBox x:Name="tbxAddress" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Height="53" Margin="0,4,0,0" />
             <TextBlock VerticalAlignment="Top" Grid.Column="0" Grid.Row="8" Text="Contact No." Margin="0,4,0,0" />
-            <TextBox VerticalAlignment="Top"  Grid.Column="1" Grid.Row="8" Margin="0,4,0,0" />
-            <Button Margin="100,10,108,-12" Content="Update"  Grid.Column="1" Grid.Row="9"  />
-            <Button Margin="0,10,212,-12" Content="Save"  Grid.Column="1" Grid.Row="9"  />
-            <Button Margin="203,10,9,-12" Content="Cancel" Grid.Column="1" Grid.Row="9" />
+            <TextBox x:Name="tbxContactNo" VerticalAlignment="Top"  Grid.Column="1" Grid.Row="8" Margin="0,4,0,0" />
+            
+            <Button x:Name="btnUpdate" Margin="100,10,108,-12" Content="Update"  Grid.Column="1" Grid.Row="9"  />
+            <Button x:Name="btnSave" Margin="0,10,212,-12" Content="Save"  Grid.Column="1" Grid.Row="9"  />
+            <Button x:Name="btnCancel" Margin="203,10,9,-12" Content="Cancel" Grid.Column="1" Grid.Row="9" />
         </Grid>
     </Grid>
 </Window>

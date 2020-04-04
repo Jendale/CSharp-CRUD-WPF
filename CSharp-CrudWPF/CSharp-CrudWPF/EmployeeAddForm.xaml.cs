@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace CSharp_CrudWPF
 {
@@ -19,9 +20,16 @@ namespace CSharp_CrudWPF
     /// </summary>
     public partial class EmployeeAddForm : Window
     {
+        MySqlConnection cn;
+        MySqlCommand cmd;
+        MySqlDataReader dr;
+
+        clsEmployeeDB employeeDB = new clsEmployeeDB();
+
         public EmployeeAddForm()
         {
             InitializeComponent();
+            cn = new MySqlConnection(employeeDB.dbcon());
         }
     }
 }

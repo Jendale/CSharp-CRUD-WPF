@@ -31,7 +31,7 @@
                 <Image Source="Assets/exit-to-app.png" />
             </StackPanel>
         </Button>
-        <Button Margin="922,55,46,413" BorderBrush="White" Background="White">
+        <Button x:Name="btnEmployeeAddForm" Margin="922,55,46,413" BorderBrush="White" Background="White" Click="BtnEmployeeAddForm_Click">
             <StackPanel>
                 <Image Source="Assets/account-plus-outline.png" />
             </StackPanel>
