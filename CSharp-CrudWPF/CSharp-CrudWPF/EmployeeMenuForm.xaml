@@ -8,20 +8,33 @@
         Title="MainWindow" Height="500" Width="1000" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
         <Rectangle Margin="0,0,0,450" Fill="#FF4FBA6F"  />
-        <Rectangle Margin="0,47,0,400" />
-        
+        <Rectangle Margin="0,47,0,400">
+
+        </Rectangle>
+
         <DataGrid Margin="10,92,10,10" FontSize="14" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="#" />
                 <DataGridTextColumn Header="Employee ID" />
-                <DataGridTextColumn Header="Last Name" />
-                <DataGridTextColumn Header="First Name" />
-                <DataGridTextColumn Header="Middle Name" />
-                <DataGridTextColumn Header="Birthdate" />
+                <DataGridTextColumn Header="Last Name" Width="100"/>
+                <DataGridTextColumn Header="First Name" Width="100" />
+                <DataGridTextColumn Header="Middle Name" Width="100" />
+                <DataGridTextColumn Header="Birthdate" Width="100" />
                 <DataGridTextColumn Header="Gender" />
-                <DataGridTextColumn Header="Address" Width="200" />
-                <DataGridTextColumn Header="Contact No" />
+                <DataGridTextColumn Header="Address" Width="250" />
+                <DataGridTextColumn Header="Contact No" Width="150" />
             </DataGrid.Columns>
         </DataGrid>
+        
+        <Button Margin="959,55,8,413" BorderBrush="White" Background="White">
+            <StackPanel>
+                <Image Source="Assets/exit-to-app.png" />
+            </StackPanel>
+        </Button>
+        <Button Margin="922,55,46,413" BorderBrush="White" Background="White">
+            <StackPanel>
+                <Image Source="Assets/account-plus-outline.png" />
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>
